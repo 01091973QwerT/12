@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Магазин</title>
+</head>
+<body>
+    <h1>Магазин</h1>
+    <ul>
+        {% for item in shop_items %}
+            <li>{{ item.name }}
+                <button>Купить</button>
+                <button>Подробнее</button>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/"><button>На главную</button></a>
+</body>
+</html>
