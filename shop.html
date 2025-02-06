@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Магазин</title>
-</head>
-<body>
-    <h1>Магазин</h1>
+{% extends 'fourth_task/menu.html' %}
+{% block pagename %}Магазин{% endblock %}
+{% block content %}
     <ul>
-        {% for item in shop_items %}
-            <li>{{ item.name }}
-                <button>Купить</button>
-                <button>Подробнее</button>
-            </li>
+        {% for game in games %}
+            <li>{{ game }} <button>Купить</button> <button>Подробнее</button></li>
         {% endfor %}
     </ul>
     <a href="/"><button>На главную</button></a>
-</body>
-</html>
+{% endblock %}

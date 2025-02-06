@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Корзина</title>
-</head>
-<body>
-    <h1>Корзина</h1>
+{% extends 'fourth_task/menu.html' %}
+{% block pagename %}Корзина{% endblock %}
+{% block content %}
     <p>Ваша корзина пока пуста. Пора добавить игры!</p>
     <a href="/"><button>На главную</button></a>
-</body>
-</html>
+{% endblock %}
